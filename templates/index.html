@@ -3,11 +3,11 @@
         <h1>Assess if customer will default on loan</h1>
         <form action = "/" method = "post">
             <p>Please input income:</p>
-            <p><input type="number" name="income"></p>
+            <p><input type="number" step="0.01" name="income"></p>
             <p>Please input age:</p>
             <p><input type="number" name="age"></p>
             <p>Please input loan amount:</p>
-            <p><input type="number" name="loan"></p>
+            <p><input type="number" step="0.01" name="loan"></p>
             <p><input type = "submit" value = "submit"></p>
         </form>
         <p>CART: {{result1}}</p>
