@@ -11,7 +11,6 @@ def index():
         loan = request.form.get("loan")
         print(income,age, loan)
         income = float(income)
-        age = float(age)
         loan = float(loan)
         model1 = joblib.load("CART")
         pred1 = model1.predict([[income, age, loan]])
